@@ -1,8 +1,7 @@
-// Write your solution here!
-const cats = ["Milo", "Otis", "Garfield"];
+let cats = ['Milo', 'Otis', 'Garfield'];
 
-function destructivelyAppendCat(name) {
-    return cats.push(name);
+function destructivelyAppendCat(cat) {
+    return cats.push(cat);
 }
 
 function destructivelyPrependCat(name) {
@@ -10,7 +9,7 @@ function destructivelyPrependCat(name) {
 }
 
 function destructivelyRemoveLastCat() {
-    return cats.pop();
+    return cats.pop()
 }
 
 function destructivelyRemoveFirstCat() {
@@ -26,9 +25,9 @@ function prependCat(name) {
 }
 
 function removeLastCat() {
-    return cats.slice(0, -1);
+    return cats.slice(0, cats.length -1)
 }
 
 function removeFirstCat() {
-    return cats.slice(1);
+    return cats.slice(1)
 }
